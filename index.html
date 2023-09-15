@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            width: 100%;
+            height: 600vh;
+        }
+
+        section {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+
+        section>div {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: -10;
+        }
+
+        section>div>div {
+            width: 100%;
+            height: 100%;
+            transition: 1s;
+            position: absolute;
+        }
+
+        section>div:first-of-type {
+            align-content: end;
+        }
+
+        section>div:last-of-type {
+            align-content: start;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .left3{
+            top: 0%;
+        }
+        .right1{
+            top: 0%;
+        }
+        .left2{
+            top: -100%
+        }
+        .right2{
+            top: 100%;
+        }
+        .left1{
+            top: -200%;
+        }
+        .right3{
+            top: 200%;
+        }
+    </style>
+</head>
+
+<body>
+    <main id="main">
+        <section>
+            <div id="left">
+                <div class="left1"><img src="img/l1.jpg" alt=""></div>
+                <div class="left2"><img src="img/l2.jpg" alt=""></div>
+                <div class="left3"><img src="img/l3.jpg" alt=""></div>
+            </div>
+            <div id="right">
+                <div class="right1"><img src="img/r1.jpg" alt=""></div>
+                <div class="right2"><img src="img/r2.jpg" alt=""></div>
+                <div class="right3"><img src="img/r3.jpg" alt=""></div>
+            </div>
+        </section>
+    </main>/
+</body>
+<script src="js/master.js">
+</script>
+
+</html>
