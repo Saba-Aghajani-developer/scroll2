@@ -8,7 +8,7 @@
 
 - Developed by Saba Aghajani
   
-- Technologies Used - Html5, Css3, Sass 
+- Technologies Used - Html5, Css3, Java Script
 
 - Role - Frontend
 
